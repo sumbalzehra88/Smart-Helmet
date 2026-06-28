@@ -58,18 +58,6 @@ Data packets are transmitted efficiently via the RadioHead library as a comma-se
 
 ## Logic & Working Principle
 
-[ Sensors: MQ-Alcohol / IR Obstacle ]
-                            |
-                    (Transmitter Uno)
-                            |
-                 ((( 433 MHz RF Link )))
-                            |
-                     (Receiver Uno)
-                            |
-     +----------------------+----------------------+
-     |                      |                      |
-[16x2 LCD]            [L298N Driver]        [Piezo Buzzer]
-
 * **Normal State:** LCD displays `SYSTEM SAFE / MOTOR ON`. The vehicle operates normally.
 * **Alcohol Event:** Exceeding the predefined threshold triggers an audible alarm. LCD displays `ALCOHOL DETECTED / WARNING`.
 * **Obstacle Event:** Detection of a close-range object cuts power to the motor driver. LCD displays `OBSTACLE DETECTED / MOTOR OFF`.
